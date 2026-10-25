@@ -26,8 +26,20 @@ Planned layout:
 2. No real data: no real names, companies, tax numbers or addresses. Do not add files that
    others send in; rebuild the structure they need synthetically.
 3. Everything here is CC0-1.0, so only add material we created ourselves.
-4. Be honest about AI involvement: the README says the content is AI-assisted, and every
-   commit made by an agent carries the co-author trailer.
+4. Be honest about AI involvement. The README says the content is AI-assisted. Commits
+   name the maintainer as author because they direct and own the work, and every commit
+   made by an agent keeps the `Co-Authored-By` trailer naming the agent. Never remove that
+   trailer.
+
+## Commits
+
+- Author: `Edgar-311 <347874636+Edgar-311@users.noreply.github.com>`, GitHub's no-reply
+  address for the maintainer. Never use a personal email address. The committer is the
+  agent. In a fresh clone, set this once:
+  `git config author.name Edgar-311`
+  `git config author.email 347874636+Edgar-311@users.noreply.github.com`
+- End every commit message with the agent's `Co-Authored-By` trailer.
+- Never rewrite or force-push published history.
 
 ## Working with the maintainer
 
