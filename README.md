@@ -13,3 +13,8 @@ An open set of OFD test files for testing OFD libraries in any language. Each fi
   All files are plain test documents: nothing that looks like an invoice, and no real personal or company data.
 - 本项目大部分内容由 AI（Claude）生成，维护者负责决定方向和批准发布。
   Most content is generated with AI assistance (Claude). The maintainer sets the direction and approves releases.
+
+## 许可证 / License
+
+[CC0-1.0](LICENSE)：放弃版权，任何人都可以随意复制、修改和使用这些测试文件，不需要署名。
+CC0-1.0: no rights reserved. Copy, modify and use these test files freely, no attribution needed.
