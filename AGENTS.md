@@ -1,0 +1,42 @@
+# AGENTS.md
+
+Instructions for AI coding agents (Claude, Codex and others) working on this repository.
+Read this file first; it carries the context between sessions.
+
+## What this project is
+
+ofd-samples is a public set of synthetic OFD test files (GB/T 33190) with expected outputs,
+so that OFD libraries in any language can test against the same files. It is the companion
+of [ofdkit](https://github.com/Edgar-311/ofdkit), but must stay useful without it.
+
+Planned layout:
+
+- `samples/<name>.ofd`: the test files
+- `expected/<name>.txt` and `expected/<name>.json`: expected text and structure
+- `generator/`: a script that rebuilds every sample deterministically from source, so the
+  files can be reviewed and regenerated rather than trusted as opaque binaries
+- `CATALOG.md`: one line per sample saying which part of the standard it exercises
+  (multiple pages, templates, embedded fonts, annotations, clip paths, custom tags, ...)
+
+## Rules that are never relaxed
+
+1. Plain documents only. Never create a file that looks like an invoice, a receipt or any
+   other official record, and never imitate a real issuer, seal or format. Samples that
+   exercise invoice-style custom tags still show ordinary text such as "测试样例".
+2. No real data: no real names, companies, tax numbers or addresses. Do not add files that
+   others send in; rebuild the structure they need synthetically.
+3. Everything here is CC0-1.0, so only add material we created ourselves.
+4. Be honest about AI involvement: the README says the content is AI-assisted, and every
+   commit made by an agent carries the co-author trailer.
+
+## Working with the maintainer
+
+The maintainer is Edgar-311, the repository owner. Write to them in simple Chinese:
+short sentences, and explain technical terms the first time they appear. Ask before
+anything public or irreversible; otherwise make sensible decisions and report them.
+
+## Status
+
+- [x] Repository and license (CC0-1.0)
+- [ ] Generator script and first samples
+- [ ] Expected outputs and catalog
