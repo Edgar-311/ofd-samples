@@ -1,0 +1,36 @@
+{
+  "name": "gbk-entry-names",
+  "description": "The document folder has a Chinese name stored as GBK bytes without the ZIP UTF-8 flag, as some older Chinese tools write it.",
+  "conforming": false,
+  "features": [
+    "ZIP entry name encoding"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "中文目录名",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "中文目录名",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "中文目录名",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

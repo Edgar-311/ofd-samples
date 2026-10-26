@@ -1,0 +1,51 @@
+{
+  "name": "composite-objects",
+  "description": "A composite graphic unit holding text, drawn twice: once at its own scale and once scaled by half through the CompositeObject's CTM.",
+  "conforming": true,
+  "features": [
+    "CompositeObject",
+    "CompositeGraphicUnit",
+    "DocumentRes"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "复合对象\n复合对象",
+      "text_objects": [
+        {
+          "id": "501",
+          "text": "复合对象",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "复合对象",
+              "x": 25.0,
+              "y": 29.0
+            }
+          ]
+        },
+        {
+          "id": "501",
+          "text": "复合对象",
+          "size": 2.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "复合对象",
+              "x": 22.5,
+              "y": 64.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

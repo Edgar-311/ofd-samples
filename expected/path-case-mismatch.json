@@ -1,0 +1,50 @@
+{
+  "name": "path-case-mismatch",
+  "description": "The template's BaseLoc says TPLS/tpl_1/content.xml but the entry is Tpls/Tpl_1/Content.xml. Readers on case-sensitive systems need a case-insensitive fallback.",
+  "conforming": false,
+  "features": [
+    "path case mismatch",
+    "templates"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "大小写不一致的模板\n正文",
+      "text_objects": [
+        {
+          "id": "901",
+          "text": "大小写不一致的模板",
+          "size": 4.0,
+          "from_template": true,
+          "runs": [
+            {
+              "text": "大小写不一致的模板",
+              "x": 20.0,
+              "y": 20.0
+            }
+          ]
+        },
+        {
+          "id": "101",
+          "text": "正文",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "正文",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

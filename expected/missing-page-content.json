@@ -1,0 +1,66 @@
+{
+  "name": "missing-page-content",
+  "description": "Page 2 is listed in Document.xml but its Content.xml is missing. Readers should still read pages 1 and 3.",
+  "conforming": false,
+  "features": [
+    "error recovery"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "第一页",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "第一页",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第一页",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": false,
+      "text": "",
+      "text_objects": []
+    },
+    {
+      "id": "3",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "第三页",
+      "text_objects": [
+        {
+          "id": "301",
+          "text": "第三页",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第三页",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

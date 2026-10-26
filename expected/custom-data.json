@@ -1,0 +1,41 @@
+{
+  "name": "custom-data",
+  "description": "Key fields stored as CustomData entries in OFD.xml, one with a separator in its name.",
+  "conforming": true,
+  "features": [
+    "CustomData"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {
+      "发票号码": "00000003",
+      "开票日期": "2026年03月04日",
+      "价税合计": "11.00",
+      "销售方地址、 电话": "测试地址 000"
+    }
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "测试样例",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "测试样例",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试样例",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

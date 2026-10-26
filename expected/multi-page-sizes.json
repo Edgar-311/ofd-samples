@@ -1,0 +1,81 @@
+{
+  "name": "multi-page-sizes",
+  "description": "Three pages: the document's A4 PageArea, an A4 landscape override, and a small custom page box.",
+  "conforming": true,
+  "features": [
+    "multiple pages",
+    "page area override"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "第一页：A4 纵向",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "第一页：A4 纵向",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第一页：A4 纵向",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "width": 297.0,
+      "height": 210.0,
+      "readable": true,
+      "text": "第二页：A4 横向",
+      "text_objects": [
+        {
+          "id": "201",
+          "text": "第二页：A4 横向",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第二页：A4 横向",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "width": 100.0,
+      "height": 60.0,
+      "readable": true,
+      "text": "第三页：自定义尺寸",
+      "text_objects": [
+        {
+          "id": "301",
+          "text": "第三页：自定义尺寸",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第三页：自定义尺寸",
+              "x": 10.0,
+              "y": 20.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

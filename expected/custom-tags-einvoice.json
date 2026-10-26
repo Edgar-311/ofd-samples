@@ -1,0 +1,86 @@
+{
+  "name": "custom-tags-einvoice",
+  "description": "Custom tags in the fp:eInvoice schema, with line items grouped under GoodsInfos/GoodsInfo. One value is written inline instead of by ObjectRef.",
+  "conforming": true,
+  "features": [
+    "custom tags",
+    "ObjectRef",
+    "GoodsInfo"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "00000002\n测试物品一\n测试物品二",
+      "text_objects": [
+        {
+          "id": "31",
+          "text": "00000002",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "00000002",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        },
+        {
+          "id": "32",
+          "text": "测试物品一",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试物品一",
+              "x": 20.0,
+              "y": 38.0
+            }
+          ]
+        },
+        {
+          "id": "33",
+          "text": "测试物品二",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试物品二",
+              "x": 20.0,
+              "y": 46.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "custom_tag_values": [
+    {
+      "path": "InvoiceNo",
+      "value": "00000002"
+    },
+    {
+      "path": "GoodsInfos/GoodsInfo/Item",
+      "value": "测试物品一"
+    },
+    {
+      "path": "GoodsInfos/GoodsInfo/Amount",
+      "value": "1.00"
+    },
+    {
+      "path": "GoodsInfos/GoodsInfo/Item",
+      "value": "测试物品二"
+    },
+    {
+      "path": "GoodsInfos/GoodsInfo/Amount",
+      "value": "2.00"
+    }
+  ]
+}

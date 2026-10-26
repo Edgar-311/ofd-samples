@@ -1,0 +1,36 @@
+{
+  "name": "hello",
+  "description": "One page with one text object. The smallest useful OFD file.",
+  "conforming": true,
+  "features": [
+    "basic"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "你好，OFD！",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "你好，OFD！",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "你好，OFD！",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

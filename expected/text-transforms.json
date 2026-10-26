@@ -1,0 +1,69 @@
+{
+  "name": "text-transforms",
+  "description": "Text placed in different ways: a scaling CTM, two TextCodes where the second omits Y and reuses the first one's, and DeltaX with the 'g' shorthand.",
+  "conforming": true,
+  "features": [
+    "CTM",
+    "TextCode X/Y reuse",
+    "DeltaX shorthand"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "缩放两倍\n前半 后半\n间距相等的文字",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "缩放两倍",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "缩放两倍",
+              "x": 22.0,
+              "y": 24.0
+            }
+          ]
+        },
+        {
+          "id": "102",
+          "text": "前半后半",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "前半",
+              "x": 20.0,
+              "y": 44.0
+            },
+            {
+              "text": "后半",
+              "x": 60.0,
+              "y": 44.0
+            }
+          ]
+        },
+        {
+          "id": "103",
+          "text": "间距相等的文字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "间距相等的文字",
+              "x": 20.0,
+              "y": 64.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "absolute-paths",
+  "description": "DocRoot, BaseLoc and template locations are absolute paths starting at the package root.",
+  "conforming": true,
+  "features": [
+    "absolute paths"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "绝对路径模板\n绝对路径正文",
+      "text_objects": [
+        {
+          "id": "901",
+          "text": "绝对路径模板",
+          "size": 4.0,
+          "from_template": true,
+          "runs": [
+            {
+              "text": "绝对路径模板",
+              "x": 20.0,
+              "y": 20.0
+            }
+          ]
+        },
+        {
+          "id": "101",
+          "text": "绝对路径正文",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "绝对路径正文",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

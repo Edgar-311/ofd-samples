@@ -1,0 +1,37 @@
+{
+  "name": "utf8-bom",
+  "description": "Every XML part starts with a UTF-8 byte order mark.",
+  "conforming": true,
+  "features": [
+    "XML encoding",
+    "BOM"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "带字节顺序标记",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "带字节顺序标记",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "带字节顺序标记",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

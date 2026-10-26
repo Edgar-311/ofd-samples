@@ -1,0 +1,84 @@
+{
+  "name": "template-page",
+  "description": "Each page draws a template with a header line behind its own content. Template text belongs to every page that uses the template.",
+  "conforming": true,
+  "features": [
+    "templates"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "模板页眉\n正文第一页",
+      "text_objects": [
+        {
+          "id": "901",
+          "text": "模板页眉",
+          "size": 4.0,
+          "from_template": true,
+          "runs": [
+            {
+              "text": "模板页眉",
+              "x": 20.0,
+              "y": 20.0
+            }
+          ]
+        },
+        {
+          "id": "101",
+          "text": "正文第一页",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "正文第一页",
+              "x": 20.0,
+              "y": 40.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "模板页眉\n正文第二页",
+      "text_objects": [
+        {
+          "id": "901",
+          "text": "模板页眉",
+          "size": 4.0,
+          "from_template": true,
+          "runs": [
+            {
+              "text": "模板页眉",
+              "x": 20.0,
+              "y": 20.0
+            }
+          ]
+        },
+        {
+          "id": "201",
+          "text": "正文第二页",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "正文第二页",
+              "x": 20.0,
+              "y": 40.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

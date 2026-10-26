@@ -1,0 +1,192 @@
+{
+  "name": "custom-tags-root",
+  "description": "Custom tags in the ofd:root layout: each field points at text objects on the page by ID. The page itself only lists the values. A field may join several objects (field Item joins 19 and 20).",
+  "conforming": true,
+  "features": [
+    "custom tags",
+    "ObjectRef"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "00000001\n2026年01月02日\n测试单位甲\nTESTID0001\n测试单位乙\n100.00\n6.00\n106.00\n测试项目\n（续）",
+      "text_objects": [
+        {
+          "id": "11",
+          "text": "00000001",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "00000001",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "text": "2026年01月02日",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "2026年01月02日",
+              "x": 20.0,
+              "y": 38.0
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "text": "测试单位甲",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试单位甲",
+              "x": 20.0,
+              "y": 46.0
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "text": "TESTID0001",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "TESTID0001",
+              "x": 20.0,
+              "y": 54.0
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "text": "测试单位乙",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试单位乙",
+              "x": 20.0,
+              "y": 62.0
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "text": "100.00",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "100.00",
+              "x": 20.0,
+              "y": 70.0
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "text": "6.00",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "6.00",
+              "x": 20.0,
+              "y": 78.0
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "text": "106.00",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "106.00",
+              "x": 20.0,
+              "y": 86.0
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "text": "测试项目",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试项目",
+              "x": 20.0,
+              "y": 94.0
+            }
+          ]
+        },
+        {
+          "id": "20",
+          "text": "（续）",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "（续）",
+              "x": 20.0,
+              "y": 102.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "custom_tag_values": [
+    {
+      "path": "InvoiceNo",
+      "value": "00000001"
+    },
+    {
+      "path": "IssueDate",
+      "value": "2026年01月02日"
+    },
+    {
+      "path": "Buyer/BuyerName",
+      "value": "测试单位甲"
+    },
+    {
+      "path": "Buyer/BuyerTaxID",
+      "value": "TESTID0001"
+    },
+    {
+      "path": "Seller/SellerName",
+      "value": "测试单位乙"
+    },
+    {
+      "path": "TaxExclusiveTotalAmount",
+      "value": "100.00"
+    },
+    {
+      "path": "TaxTotalAmount",
+      "value": "6.00"
+    },
+    {
+      "path": "TaxInclusiveTotalAmount",
+      "value": "106.00"
+    },
+    {
+      "path": "Item",
+      "value": "测试项目（续）"
+    }
+  ]
+}

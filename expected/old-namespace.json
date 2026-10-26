@@ -1,0 +1,36 @@
+{
+  "name": "old-namespace",
+  "description": "Uses the namespace http://www.ofdspec.org (without /2016), which some producers write.",
+  "conforming": false,
+  "features": [
+    "namespace variant"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "旧命名空间",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "旧命名空间",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "旧命名空间",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

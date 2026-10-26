@@ -1,0 +1,36 @@
+{
+  "name": "gb18030-xml",
+  "description": "Every XML part is encoded as GB18030 and declares it.",
+  "conforming": false,
+  "features": [
+    "XML encoding"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "国标编码的文字",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "国标编码的文字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "国标编码的文字",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

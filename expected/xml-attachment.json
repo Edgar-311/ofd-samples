@@ -1,0 +1,46 @@
+{
+  "name": "xml-attachment",
+  "description": "An XML attachment (listed in Attachs/Attachments.xml) carries field values directly.",
+  "conforming": true,
+  "features": [
+    "attachments"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "测试样例",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "测试样例",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试样例",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attachment_values": [
+    {
+      "path": "InvoiceNo",
+      "value": "00000005"
+    },
+    {
+      "path": "Buyer/BuyerName",
+      "value": "测试单位丙"
+    }
+  ]
+}

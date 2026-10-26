@@ -1,0 +1,62 @@
+{
+  "name": "page-blocks",
+  "description": "Text nested three PageBlocks deep, plus text directly in the layer.",
+  "conforming": true,
+  "features": [
+    "PageBlock"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "图层中的文字\n第一层\n第三层",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "图层中的文字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "图层中的文字",
+              "x": 20.0,
+              "y": 30.0
+            }
+          ]
+        },
+        {
+          "id": "111",
+          "text": "第一层",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第一层",
+              "x": 20.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "131",
+          "text": "第三层",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第三层",
+              "x": 20.0,
+              "y": 50.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

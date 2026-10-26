@@ -9,14 +9,21 @@ ofd-samples is a public set of synthetic OFD test files (GB/T 33190) with expect
 so that OFD libraries in any language can test against the same files. It is the companion
 of [ofdkit](https://github.com/Edgar-311/ofdkit), but must stay useful without it.
 
-Planned layout:
+Layout:
 
 - `samples/<name>.ofd`: the test files
-- `expected/<name>.txt` and `expected/<name>.json`: expected text and structure
-- `generator/`: a script that rebuilds every sample deterministically from source, so the
-  files can be reviewed and regenerated rather than trusted as opaque binaries
-- `CATALOG.md`: one line per sample saying which part of the standard it exercises
-  (multiple pages, templates, embedded fonts, annotations, clip paths, custom tags, ...)
+- `expected/<name>.json`: expected structure and per-page text (format in README.md)
+- `generator/build_samples.py`: builds every sample and expected output deterministically
+  from a scene description. Never edit samples/, expected/ or CATALOG.md by hand: change
+  the generator, run it, commit the result. `--check` verifies the committed files.
+- `generator/validate.py`: checks that do not rely on the generator's own code (strict XML
+  parsing of conforming samples, expected-output fields).
+- `CATALOG.md`: generated list of samples and what each exercises.
+
+Adding a sample: add a `Sample(...)` in `samples()` with a description, `conforming`,
+`features` and the expected text of each page written by hand (not produced by a reader).
+Expected coordinates come from the scene; keep them independent of any OFD library.
+Then run ofdkit's `tests/test_samples.py` against it.
 
 ## Rules that are never relaxed
 
@@ -50,5 +57,7 @@ anything public or irreversible; otherwise make sensible decisions and report th
 ## Status
 
 - [x] Repository and license (CC0-1.0)
-- [ ] Generator script and first samples
-- [ ] Expected outputs and catalog
+- [x] Generator, 18 samples, expected outputs, catalog, CI (`check.yml`)
+
+Ideas for more samples: annotations (Annots) carrying text, multiple DocBody entries,
+vertical text, embedded fonts, clip paths, signatures, PageRes resources, DeltaY.
