@@ -1,0 +1,206 @@
+{
+  "name": "one-char-per-run",
+  "description": "Two lines drawn one character per text object, as some producers do. They are ordinary lines; characters above each other must not be joined.",
+  "conforming": true,
+  "features": [
+    "reading order",
+    "one character per object"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "逐字排列的文字\n第二行也是逐字",
+      "text_objects": [
+        {
+          "id": "100",
+          "text": "逐",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "逐",
+              "x": 20.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "101",
+          "text": "字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "字",
+              "x": 24.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "102",
+          "text": "排",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "排",
+              "x": 28.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "103",
+          "text": "列",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "列",
+              "x": 32.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "104",
+          "text": "的",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "的",
+              "x": 36.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "105",
+          "text": "文",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "文",
+              "x": 40.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "106",
+          "text": "字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "字",
+              "x": 44.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "200",
+          "text": "第",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第",
+              "x": 20.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "201",
+          "text": "二",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "二",
+              "x": 24.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "202",
+          "text": "行",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "行",
+              "x": 28.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "203",
+          "text": "也",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "也",
+              "x": 32.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "204",
+          "text": "是",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "是",
+              "x": 36.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "205",
+          "text": "逐",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "逐",
+              "x": 40.0,
+              "y": 45.0
+            }
+          ]
+        },
+        {
+          "id": "206",
+          "text": "字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "字",
+              "x": 44.0,
+              "y": 45.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

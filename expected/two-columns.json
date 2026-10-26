@@ -1,0 +1,154 @@
+{
+  "name": "two-columns",
+  "description": "A heading across the page, then two columns of prose and a caption in smaller type between them. Read the left column, then the right one, then the caption.",
+  "conforming": true,
+  "features": [
+    "reading order",
+    "columns"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "分栏排版测试\n这是测试用的第一栏文字，它的每一行\n都差不多一样长，用来模拟报刊上的\n分栏排版。读取工具应该先读完这一\n栏，再去读右边的第二栏。\n这是测试用的第二栏文字，同样每一行\n的长度都很接近。如果读取工具把两\n栏混在一起读，这里的句子就会被打\n断，变得无法理解。\n图注：小号字的说明",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "分栏排版测试",
+          "size": 6.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "分栏排版测试",
+              "x": 15.0,
+              "y": 30.0
+            }
+          ]
+        },
+        {
+          "id": "110",
+          "text": "这是测试用的第一栏文字，它的每一行",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "这是测试用的第一栏文字，它的每一行",
+              "x": 15.0,
+              "y": 50.0
+            }
+          ]
+        },
+        {
+          "id": "111",
+          "text": "都差不多一样长，用来模拟报刊上的",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "都差不多一样长，用来模拟报刊上的",
+              "x": 15.0,
+              "y": 56.0
+            }
+          ]
+        },
+        {
+          "id": "112",
+          "text": "分栏排版。读取工具应该先读完这一",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "分栏排版。读取工具应该先读完这一",
+              "x": 15.0,
+              "y": 62.0
+            }
+          ]
+        },
+        {
+          "id": "113",
+          "text": "栏，再去读右边的第二栏。",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "栏，再去读右边的第二栏。",
+              "x": 15.0,
+              "y": 68.0
+            }
+          ]
+        },
+        {
+          "id": "120",
+          "text": "这是测试用的第二栏文字，同样每一行",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "这是测试用的第二栏文字，同样每一行",
+              "x": 110.0,
+              "y": 50.0
+            }
+          ]
+        },
+        {
+          "id": "121",
+          "text": "的长度都很接近。如果读取工具把两",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "的长度都很接近。如果读取工具把两",
+              "x": 110.0,
+              "y": 56.0
+            }
+          ]
+        },
+        {
+          "id": "122",
+          "text": "栏混在一起读，这里的句子就会被打",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "栏混在一起读，这里的句子就会被打",
+              "x": 110.0,
+              "y": 62.0
+            }
+          ]
+        },
+        {
+          "id": "123",
+          "text": "断，变得无法理解。",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "断，变得无法理解。",
+              "x": 110.0,
+              "y": 68.0
+            }
+          ]
+        },
+        {
+          "id": "130",
+          "text": "图注：小号字的说明",
+          "size": 2.5,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "图注：小号字的说明",
+              "x": 82.0,
+              "y": 59.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

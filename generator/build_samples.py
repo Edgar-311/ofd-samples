@@ -586,6 +586,65 @@ def samples() -> list[Sample]:
         ],
         texts=["第一页", "", "第三页"],
     ))
+
+    left = ["这是测试用的第一栏文字，它的每一行", "都差不多一样长，用来模拟报刊上的", "分栏排版。读取工具应该先读完这一", "栏，再去读右边的第二栏。"]
+    right = ["这是测试用的第二栏文字，同样每一行", "的长度都很接近。如果读取工具把两", "栏混在一起读，这里的句子就会被打", "断，变得无法理解。"]
+    rows = [50.0, 56.0, 62.0, 68.0]
+    s.append(Sample(
+        name="two-columns",
+        description="A heading across the page, then two columns of prose and a caption in smaller type "
+        "between them. Read the left column, then the right one, then the caption.",
+        conforming=True,
+        features=["reading order", "columns"],
+        pages=[PageSpec(
+            [TextObj.simple(101, "分栏排版测试", 15, 30, size=6.0)]
+            + [TextObj.simple(110 + i, text, 15, y) for i, (text, y) in enumerate(zip(left, rows))]
+            + [TextObj.simple(120 + i, text, 110, y) for i, (text, y) in enumerate(zip(right, rows))]
+            + [TextObj.simple(130, "图注：小号字的说明", 82, 59, size=2.5)]
+        )],
+        texts=["\n".join(["分栏排版测试", *left, *right, "图注：小号字的说明"])],
+    ))
+
+    s.append(Sample(
+        name="vertical-label",
+        description="A label written one character per line (说/明/事/项) beside two lines of text. "
+        "The label should read as one word, not be scattered over the lines.",
+        conforming=True,
+        features=["reading order", "vertical label"],
+        pages=[PageSpec(
+            [TextObj.simple(101 + i, char, 12, 40 + 6 * i) for i, char in enumerate("说明事项")]
+            + [TextObj.simple(111, "第一行：这是标签右侧的内容", 26, 40), TextObj.simple(112, "第二行：标签竖着写，每行一个字", 26, 49)]
+        )],
+        texts=["说明事项 第一行：这是标签右侧的内容\n第二行：标签竖着写，每行一个字"],
+    ))
+
+    table = [("名称", "单位", "数量"), ("测试项目一", "次", "1"), ("测试项目二", "次", "2"), ("测试项目三", "次", "3")]
+    s.append(Sample(
+        name="table-single-chars",
+        description="A small table whose unit column holds the same single character in every row. "
+        "Each row keeps its own 次; the column must not be merged into one word.",
+        conforming=True,
+        features=["reading order", "table"],
+        pages=[PageSpec([
+            TextObj.simple(100 + 10 * row + col, text, x, 40 + 7 * row)
+            for row, cells in enumerate(table)
+            for col, (text, x) in enumerate(zip(cells, (20, 70, 90)))
+        ])],
+        texts=["\n".join(" ".join(cells) for cells in table)],
+    ))
+
+    s.append(Sample(
+        name="one-char-per-run",
+        description="Two lines drawn one character per text object, as some producers do. "
+        "They are ordinary lines; characters above each other must not be joined.",
+        conforming=True,
+        features=["reading order", "one character per object"],
+        pages=[PageSpec(
+            [TextObj.simple(100 + i, char, 20 + 4 * i, 40) for i, char in enumerate("逐字排列的文字")]
+            + [TextObj.simple(200 + i, char, 20 + 4 * i, 45) for i, char in enumerate("第二行也是逐字")]
+        )],
+        texts=["逐字排列的文字\n第二行也是逐字"],
+    ))
     return s
 
 

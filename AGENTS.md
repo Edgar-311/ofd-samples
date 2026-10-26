@@ -57,7 +57,7 @@ anything public or irreversible; otherwise make sensible decisions and report th
 ## Status
 
 - [x] Repository and license (CC0-1.0)
-- [x] Generator, 18 samples, expected outputs, catalog, CI (`check.yml`)
+- [x] Generator, 22 samples, expected outputs, catalog, CI (`check.yml`)
 
 Ideas for more samples: annotations (Annots) carrying text, multiple DocBody entries,
 vertical text, embedded fonts, clip paths, signatures, PageRes resources, DeltaY.

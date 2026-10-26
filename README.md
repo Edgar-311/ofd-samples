@@ -3,8 +3,8 @@
 公开的 OFD 测试文件集，任何语言的 OFD 库都可以拿来做测试。每个文件都附带期望输出。
 An open set of OFD test files (GB/T 33190) for testing OFD libraries in any language. Each file comes with its expected output.
 
-目前有 18 个样本，包括多页、模板、复合对象、坐标变换、自定义标签、附件，以及实际文件里常见的不规范写法（路径大小写不一致、GBK 文件名、GB18030 编码、错误的 XML 前缀等）。完整列表见 [CATALOG.md](CATALOG.md)。
-There are 18 samples covering multiple pages, templates, composite objects, transforms, custom tags and attachments, plus non-conforming files of the kinds found in the wild (wrongly cased paths, GBK entry names, GB18030 XML, broken XML prefixes). See [CATALOG.md](CATALOG.md).
+目前有 22 个样本，包括阅读顺序（分栏、竖排标签）、多页、模板、复合对象、坐标变换、自定义标签、附件，以及实际文件里常见的不规范写法（路径大小写不一致、GBK 文件名、GB18030 编码、错误的 XML 前缀等）。完整列表见 [CATALOG.md](CATALOG.md)。
+There are 22 samples covering reading order (columns, vertical labels), multiple pages, templates, composite objects, transforms, custom tags and attachments, plus non-conforming files of the kinds found in the wild (wrongly cased paths, GBK entry names, GB18030 XML, broken XML prefixes). See [CATALOG.md](CATALOG.md).
 
 ## 原则 / Principles
 

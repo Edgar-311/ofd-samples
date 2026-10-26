@@ -1,0 +1,180 @@
+{
+  "name": "table-single-chars",
+  "description": "A small table whose unit column holds the same single character in every row. Each row keeps its own 次; the column must not be merged into one word.",
+  "conforming": true,
+  "features": [
+    "reading order",
+    "table"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "名称 单位 数量\n测试项目一 次 1\n测试项目二 次 2\n测试项目三 次 3",
+      "text_objects": [
+        {
+          "id": "100",
+          "text": "名称",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "名称",
+              "x": 20.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "101",
+          "text": "单位",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "单位",
+              "x": 70.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "102",
+          "text": "数量",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "数量",
+              "x": 90.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "110",
+          "text": "测试项目一",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试项目一",
+              "x": 20.0,
+              "y": 47.0
+            }
+          ]
+        },
+        {
+          "id": "111",
+          "text": "次",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "次",
+              "x": 70.0,
+              "y": 47.0
+            }
+          ]
+        },
+        {
+          "id": "112",
+          "text": "1",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "1",
+              "x": 90.0,
+              "y": 47.0
+            }
+          ]
+        },
+        {
+          "id": "120",
+          "text": "测试项目二",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试项目二",
+              "x": 20.0,
+              "y": 54.0
+            }
+          ]
+        },
+        {
+          "id": "121",
+          "text": "次",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "次",
+              "x": 70.0,
+              "y": 54.0
+            }
+          ]
+        },
+        {
+          "id": "122",
+          "text": "2",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "2",
+              "x": 90.0,
+              "y": 54.0
+            }
+          ]
+        },
+        {
+          "id": "130",
+          "text": "测试项目三",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "测试项目三",
+              "x": 20.0,
+              "y": 61.0
+            }
+          ]
+        },
+        {
+          "id": "131",
+          "text": "次",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "次",
+              "x": 70.0,
+              "y": 61.0
+            }
+          ]
+        },
+        {
+          "id": "132",
+          "text": "3",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "3",
+              "x": 90.0,
+              "y": 61.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

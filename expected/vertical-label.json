@@ -1,0 +1,102 @@
+{
+  "name": "vertical-label",
+  "description": "A label written one character per line (说/明/事/项) beside two lines of text. The label should read as one word, not be scattered over the lines.",
+  "conforming": true,
+  "features": [
+    "reading order",
+    "vertical label"
+  ],
+  "doc_info": {
+    "title": "测试样例",
+    "custom_data": {}
+  },
+  "pages": [
+    {
+      "id": "1",
+      "width": 210.0,
+      "height": 297.0,
+      "readable": true,
+      "text": "说明事项 第一行：这是标签右侧的内容\n第二行：标签竖着写，每行一个字",
+      "text_objects": [
+        {
+          "id": "101",
+          "text": "说",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "说",
+              "x": 12.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "102",
+          "text": "明",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "明",
+              "x": 12.0,
+              "y": 46.0
+            }
+          ]
+        },
+        {
+          "id": "103",
+          "text": "事",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "事",
+              "x": 12.0,
+              "y": 52.0
+            }
+          ]
+        },
+        {
+          "id": "104",
+          "text": "项",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "项",
+              "x": 12.0,
+              "y": 58.0
+            }
+          ]
+        },
+        {
+          "id": "111",
+          "text": "第一行：这是标签右侧的内容",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第一行：这是标签右侧的内容",
+              "x": 26.0,
+              "y": 40.0
+            }
+          ]
+        },
+        {
+          "id": "112",
+          "text": "第二行：标签竖着写，每行一个字",
+          "size": 4.0,
+          "from_template": false,
+          "runs": [
+            {
+              "text": "第二行：标签竖着写，每行一个字",
+              "x": 26.0,
+              "y": 49.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
